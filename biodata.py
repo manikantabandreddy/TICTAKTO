@@ -1,5 +1,5 @@
-f_name = input("enter the first name : ")
-l_name = input("enter the last name : ")
+f_name = input("enter the first name : ")[:20]
+l_name = input("enter the last name : ")[:20]
 d_o_b = input("enter the date of birth : ")
 Email=input("enter the mail id : ")
 mobile= input("enter the mobile number : ")
@@ -9,6 +9,16 @@ ssc = input("enter the ssc : ")
 skills = input("enter your skills : ")
 hobbies = input("enter the hobbies : ")
 address = input("enter the address : ")
+
+if len(f_name)<=20:
+    print("not more than 20 characters")
+elif len(l_name)<=20:
+    print("not more than 20 cgharacters")
+else:
+    print("not a character")
+    
+
+    
 
 a_str1="FIRST NAME".ljust(14)
 b_str2="LAST NAME".ljust(14)
