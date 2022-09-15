@@ -16,9 +16,8 @@ if x.isnumeric and y.isnumeric():
         print("DIVISION : ",a%b)
     elif var == "/":
         print("REMINDER : ",a/b)
-        
-elif x.isalpha or y.isalpha:
-    print("you enter wrong input")
+    elif x.isalpha or y.isalpha:
+        print("you enter wrong input")
     
 else:
     print("THIS IS AN ALPHABATE")
